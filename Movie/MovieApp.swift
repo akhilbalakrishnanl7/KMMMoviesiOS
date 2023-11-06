@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import movies
 
 @main
 struct MovieApp: App {
+    
+    init() {
+        KoinHelperKt.doInitKoin()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
     }
 }
