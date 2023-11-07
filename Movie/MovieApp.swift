@@ -17,7 +17,10 @@ struct MovieApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            NavigationView{
+                HomeScreen()
+            }
+            .accentColor(.white)
         }
     }
 }

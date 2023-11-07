@@ -1,0 +1,62 @@
+//
+//  DetailScreen.swift
+//  Movie
+//
+//  Created by Akhil.b on 06/11/23.
+//
+
+import SwiftUI
+import movies
+
+struct DetailScreen: View {
+    
+    let movie: Movie
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                ZStack{
+                    AsyncImage(url: URL(string: movie.imageUrl)){image in
+                        image.resizable().scaledToFill()
+                    }placeholder: {
+                        ProgressView()
+                    }
+                }
+                .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 300)
+                
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(movie.title)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Button(action:{}){
+                        HStack {
+                            Image(systemName: "play.fill")
+                                .foregroundColor(.black)
+                            Text("Watch now")
+                                .foregroundColor(.black)
+                        }
+                    }.frame(maxWidth: .infinity, maxHeight: 40)
+                        .padding()
+                        .background(.red)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                    
+                    Text("Released on \(movie.releaseDate)")
+                    
+                    Text(movie.description_)
+                        .font(.body)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(20)
+                .background(.black)
+                
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+    }
+}
+
+#Preview {
+    DetailScreen(movie: sampleMovie)
+}

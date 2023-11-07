@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974E3A352AF8E74C00635816 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974E3A342AF8E74C00635816 /* DetailScreen.swift */; };
 		97A633D52AF8AC9F00E8B8F4 /* MovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A633D42AF8AC9F00E8B8F4 /* MovieApp.swift */; };
 		97A633D72AF8AC9F00E8B8F4 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A633D62AF8AC9F00E8B8F4 /* HomeScreen.swift */; };
 		97A633D92AF8ACA100E8B8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A633D82AF8ACA100E8B8F4 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		974E3A342AF8E74C00635816 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		97A633D12AF8AC9F00E8B8F4 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A633D42AF8AC9F00E8B8F4 /* MovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp.swift; sourceTree = "<group>"; };
 		97A633D62AF8AC9F00E8B8F4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		974E3A332AF8E73000635816 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				974E3A342AF8E74C00635816 /* DetailScreen.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		97A633C82AF8AC9F00E8B8F4 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		97A633D32AF8AC9F00E8B8F4 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				974E3A332AF8E73000635816 /* Detail */,
 				97A634042AF8B51700E8B8F4 /* Util */,
 				97A633D42AF8AC9F00E8B8F4 /* MovieApp.swift */,
 				97A634012AF8AE6800E8B8F4 /* Home */,
@@ -292,6 +303,7 @@
 			files = (
 				97A633D72AF8AC9F00E8B8F4 /* HomeScreen.swift in Sources */,
 				97A634062AF8B52900E8B8F4 /* Sample.swift in Sources */,
+				974E3A352AF8E74C00635816 /* DetailScreen.swift in Sources */,
 				97A634032AF8AED700E8B8F4 /* HomeViewModel.swift in Sources */,
 				97A633D52AF8AC9F00E8B8F4 /* MovieApp.swift in Sources */,
 				97A634082AF8B77B00E8B8F4 /* MovieGridItem.swift in Sources */,
